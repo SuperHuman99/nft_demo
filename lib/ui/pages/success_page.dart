@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:nft_demo/ui/constants.dart';
 import 'package:nft_demo/ui/pages/landing_page.dart';
 import 'package:nft_demo/ui/widgets/custom_elevated_button.dart';
@@ -18,6 +19,7 @@ class _SuccessPageState extends State<SuccessPage> {
     double screenHeight = MediaQuery.of(context).size.height;
     return WillPopScope(
       onWillPop: () async{
+        Fluttertoast.showToast(msg: "Please press the button to go back to home");
         return false;
       },
       child: SafeArea(

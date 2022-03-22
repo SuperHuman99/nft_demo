@@ -107,7 +107,7 @@ class _DetailsPageState extends State<DetailsPage> {
                         FadeInAnimation(
                           delay: 1000,
                           child: Text(
-                            widget.nft.highestBid,
+                            "${widget.nft.highestBid} ETH",
                             style: appTextTheme.titleSmall,
                           ),
                         ),

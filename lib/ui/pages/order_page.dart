@@ -177,7 +177,7 @@ class _OrderPageState extends State<OrderPage>
                   orderDetailsPageItem(
                       appTextTheme: appTextTheme,
                       itemName: "Flat Amount",
-                      itemValue: widget.nft.flatAmount,
+                      itemValue: "${widget.nft.flatAmount} USD",
                       itemNameDelay: 1800,
                       itemValueDelay: 2000),
                   orderDetailsPageItem(
